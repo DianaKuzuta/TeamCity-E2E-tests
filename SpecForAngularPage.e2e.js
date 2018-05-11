@@ -99,16 +99,17 @@ xdescribe('angular docs page', function () {
     });
 });
 
-xdescribe('angular docs page', function () {
-    it('should open The fundamentals of Angular item of left menu', async function () {
-
-        var menuLinkTheFundamentals = element(by.buttonText('Fundamentals'));
-        await menuLinkTheFundamentals.click();
-        await browser.sleep(5000);
-        expect(await menuLinkTheFundamentals['aria-pressed="true"']);
-        await menuLinkArchitecture = element(by.buttonText('Architecture'));
-        await menuLinkArchitecture.click();
-        await menuLinkArchitectureOverview = element(by.css('a.vertical-menu-item level-3 collapsed[title = "Basic building blocks of Angular applications."]'))
-        await menuLinkArchitectureOverview.click();
-    });expect(await browser.getCurrentUrl()).toEqual('https://angular.io/guide/architecture');
-});
+// describe('angular docs page', function () {
+//     it('should open The fundamentals of Angular item of left menu', async function () {
+//
+//         var menuLinkTheFundamentals = element(by.buttonText('Fundamentals'));
+//         await menuLinkTheFundamentals.click();
+//         await browser.sleep(5000);
+//         expect(await menuLinkTheFundamentals['aria-pressed="true"']);
+//         await menuLinkArchitecture = element(by.buttonText('Architecture'));
+//         await menuLinkArchitecture.click();
+//         await menuLinkArchitectureOverview = element(by.css('a.vertical-menu-item level-3 collapsed[title = "Basic building blocks of Angular applications."]'))
+//         await menuLinkArchitectureOverview.click();
+//         expect(await browser.getCurrentUrl()).toEqual('https://angular.io/guide/architecture');
+//     });
+// });
